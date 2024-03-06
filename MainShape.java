@@ -10,10 +10,10 @@ public class MainShape {
         type[4] = new Circle("pink",3.02);
         printTotal(type);
     }
-    public static void printTotal(Shape[] shape){
+    public static void printTotal(Shape[] type){
         double totalArea = 0;
         double totalPeri = 0;
-        for(Shape i: shapes){
+        for(Shape i: type){
             totalArea = totalArea + i.calculateArea();
             totalPeri = totalPeri + i.calculatePerimeter();
         }
